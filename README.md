@@ -3,6 +3,8 @@ a simple pacman game , created with c and raylib
 
 ![pacman-readme](https://github.com/user-attachments/assets/4db22f4b-978f-48ac-99d1-7b99e4b03088)
 
+Download Raylib via this link : <a href="https://raysan5.itch.io/raylib/purchase?popup=1">download</a>
+
 <h2>Ghosts movement modes :</h2>
 
 <h3> 1 . Following the pacman</h3>
