@@ -5,7 +5,7 @@ a simple pacman game , created with c and raylib
 
 <h2>Ghosts movement modes :</h2>
 
-<h3> 1 . Moving randomly</h3>
+<h3> 1 . Following the pacman</h3>
 
 ```
 Vector2 distance_calculator(Ghost ghost , Player player){
@@ -43,8 +43,46 @@ if(((newdir.y<newdir.x || CheckCollisionWithWalls(newposx,10)==true) && CheckCol
 }
 ```
 
+<h3> 2 . Moving randomly</h3>
+
+```
+void UpdateGhostDirection(Ghost *ghost)
+{
+    int random = GetRandomValue(0, 3);
+
+    switch (random)
+    {
+    case 0:
+        ghost->direction = (Vector2){1, 0};
+        break;
+    case 1:
+        ghost->direction = (Vector2){-1, 0};
+        break;
+    case 2:
+        ghost->direction = (Vector2){0, 1};
+        break;
+    case 3:
+        ghost->direction = (Vector2){0, -1};
+        break;
+    }
+}
+
+void MoveGhost(Ghost *ghost, int speed)
+{
+    Vector2 nextPosition = (Vector2){ghost->position.x + ghost->direction.x * speed, ghost->position.y + ghost->direction.y * speed};
+
+    if (CheckCollisionWithWalls(nextPosition, 10)==true)
+    {
+        UpdateGhostDirection(ghost);
+    }
+    else
+    {
+        ghost->position = nextPosition;
+    }
+}
+```
 
 
-<h3> 2 . Following the pacman</h3>
+
 
 
