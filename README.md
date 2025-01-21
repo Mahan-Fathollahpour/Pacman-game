@@ -83,6 +83,7 @@ void MoveGhost(Ghost *ghost, int speed)
     }
 }
 ```
+pacman.c is the main file
 
 <h1>Developer :</h1>
 
