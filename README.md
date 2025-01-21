@@ -82,7 +82,9 @@ void MoveGhost(Ghost *ghost, int speed)
 }
 ```
 
+<h1>Developer :</h1>
 
+<h3>Mahan Fathollahpour</h3>
 
 
 
