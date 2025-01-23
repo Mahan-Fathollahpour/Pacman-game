@@ -9,7 +9,7 @@ Download Raylib via this link : <a href="https://raysan5.itch.io/raylib/purchase
 
 <h3> 1 . Following the pacman</h3>
 
-```
+```C
 Vector2 distance_calculator(Ghost ghost , Player player){
 
 double distance_x = player.position.x - ghost.position.x  ;
