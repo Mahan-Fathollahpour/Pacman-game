@@ -47,7 +47,7 @@ if(((newdir.y<newdir.x || CheckCollisionWithWalls(newposx,10)==true) && CheckCol
 
 <h3> 2 . Moving randomly</h3>
 
-```
+```C
 void UpdateGhostDirection(Ghost *ghost)
 {
     int random = GetRandomValue(0, 3);
