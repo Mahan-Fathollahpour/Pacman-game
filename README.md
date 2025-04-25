@@ -85,6 +85,9 @@ void MoveGhost(Ghost *ghost, int speed)
 ```
 pacman.c is the main file
 
+photo from game :
+![game](https://github.com/user-attachments/assets/e5fd0d69-6ca8-4d8d-bda9-871119cd73a7)
+
 <h1>Developer :</h1>
 
 <h3>Mahan Fathollahpour</h3>
